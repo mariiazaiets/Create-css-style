@@ -1,0 +1,47 @@
+html {
+    background-color:purple;
+}
+#header {
+    color: yellow;
+}
+#header1 {
+    color: greenyellow;
+}
+.style {
+    color: white;
+    background-color: darkorange;
+}
+p i {
+color: midnightblue;
+}
+p.example, b{
+    font-size: 20px;
+    font-weight: 200;
+    color: mintcream;
+}
+p.example:first-letter {
+color: pink;
+font-weight: 1000;
+}
+p#example:first-line {
+    /* color: paleturquoise; */
+}
+.href {
+    color: black;
+    background-color: khaki;
+}
+.href:hover {
+    color: blue;
+}
+p:hover, b:hover {
+    color: crimson;
+}
+p.example:hover {
+    color: crimson;
+}
+.href:active {
+    color: darkmagenta;
+}
+.href:visited {
+    color: yellowgreen;
+}
