@@ -1,5 +1,10 @@
 html {
-    background-color:purple;
+    background-color:rgb(170, 12, 170);
+    background-image: url('https://www.look.com.ua/large/201309/78224.jpg');
+    background-size: 100%;
+    margin: 0px;
+    padding: 0px;
+    /* "margin" i "padding" ставимо для того щоб на сайті не було жодних зайвих відступів, крім тих, які ми вказуємо */
 }
 #header {
     color: yellow;
@@ -10,6 +15,7 @@ html {
 .style {
     color: white;
     background-color: darkorange;
+    line-height: 130%;
 }
 p i {
 color: midnightblue;
@@ -22,6 +28,7 @@ p.example, b{
 p.example:first-letter {
 color: pink;
 font-weight: 1000;
+font-family: monospace;
 }
 p#example:first-line {
     /* color: paleturquoise; */
@@ -29,12 +36,14 @@ p#example:first-line {
 .href {
     color: black;
     background-color: khaki;
+    font-family: 'Tahoma';
 }
 .href:hover {
     color: blue;
 }
 p:hover, b:hover {
     color: crimson;
+    /* текст, при наведенні курсора на його, змінює свій колір */
 }
 p.example:hover {
     color: crimson;
@@ -44,4 +53,132 @@ p.example:hover {
 }
 .href:visited {
     color: yellowgreen;
+}
+#textstyles {
+    color: white;
+    font-size: 18px;
+    font-weight: 700;
+    font-family: 'Lucida Sans';
+    /* стиль шрифта */
+    text-align: right;
+    word-spacing: 2px;
+    letter-spacing: 2px;
+}
+#testBlock {
+    border: 6px outset yellow;
+    /* Лінії, які можуть окреслювати блоки 
+    solvid - пряма лінія
+    dashed - пунктир
+    dotted - малий крапочний пунктир
+    double - подвійна суцільна лінія 
+    groove - втиснута об'ємна лінія
+    ridge - опукла об'ємна лінія
+    inset - весь блок виглядає "втиснутим"
+    (але у мене на ноуті HP цей тег виглядає опуклим, тобто представляє собою тег "outset" (верхня частина у "outset" має бути світліша, а нижня темніша) )
+    outset - весь блок виглядає "опуклим"*/
+
+    /* Також тег "border" можна позначати 
+    "border-bottom" (і тут відповідно змінювати окреслення блоку ЗНИЗУ)
+    "border-top" (окреслення вгорі бллоку)
+    "border-left" (з лівої сторони окреслення блоку)
+    "border-right" (з правої сторони окреслення блоку) */
+
+    height: 50px;
+    width: 300px;
+    background-color: pink;
+    margin-left: 465px;
+    /* Проосто "margin" це відступ блоку зовні на сайті з усих боків,
+    у даному випадку це відступ блоку ліворуч від сайту.
+    Mоже набувати значень top, right, bottom, left*/
+    padding: 30px;
+    /* це відступ тексту від бортиків всередині.
+    Mоже набувати значень top, right, bottom, left */
+    border-radius: 50px;
+    /* округлення боків, без цього тегу блок виглядає як прямокутник */
+}
+#testBlock:hover {
+    color: red;
+}
+header {
+    width: calc(100%-10px);
+    /*100% - це означає, що блок буде розтягуватися по всьому екрану */
+    /* "calc" - Используется для указания вычисляемого значения свойств, которые в качестве значений используют размер. Это позволяет задавать значения основанные на сложении или вычитании разных единиц измерений, например можно задать 100% - 20px. Если значение не может быть вычислено, оно игнорируется. */
+    height: 30px;
+    background-color: rgb(241, 255, 38);
+    border-bottom: 2px solid blueviolet;
+    /* border-top: 2px solid blueviolet; */
+    padding: 10px;
+    font-size: 1.2em;
+    /* розмір шрифту */
+    color: darkblue;
+    font-family: 'Comic Sans MS';
+    /* стиль шрифта */
+    float: none;
+/* ЦЕ ШАПКА */
+}
+article, aside{
+    background-color: deeppink;
+    float: left;
+    height: 250px;
+    border-radius: 100px;
+    border: 6px groove rgb(210, 20, 228);
+    margin: 10px;
+    box-sizing: border-box;
+    /* це означає, що ширина не буде змінюватись */
+    margin-top: 20px;
+    /* Определяет, по какой стороне будет выравниваться элемент, при этом остальные элементы будут обтекать его с других сторон. Когда значение свойства "float" равно 'none', элемент выводится на странице как обычно, при этом допускается, что одна строка обтекающего текста может быть на той же линии, что и сам элемент.
+    "left" - Выравнивает элемент по левому краю, а все остальные элементы, вроде текста, обтекают его по правой стороне.
+    "right" - Выравнивает элемент по правому краю, а все остальные элементы обтекают его по левой стороне.
+    "none" - Обтекание элемента не задается.
+    "inherit" - Наследует значение родителя. */
+}
+article {
+    width: 60%;
+    margin-left: 5%;
+    margin-right: 5%;
+  
+}
+aside {
+    width: 25%;
+}
+footer {
+    width: 98.3%;
+    float: left;
+    height: 30px;
+    background-color: rgb(241, 255, 38);
+    margin-top: 30px;
+    border-top: 2px solid blueviolet;
+    padding: 10px;
+    font-size: 1.2em;
+    color: darkblue;
+    font-family: 'Comic Sans MS';
+/* ЦЕ НИЗ САЙТУ */
+}
+#testSearch {
+    width: 10%;
+    height: 30px;
+    background-color: rgb(255, 255, 255);
+    border: 4px solid red;
+    position: relative;
+    top: -56px;
+    left: 900px;
+}
+#h2 {
+    color: rgb(255, 255, 255);
+    position: relative;
+    left: 150px;
+}
+#p {
+    color: rgb(255, 232, 232);
+    padding: 10px;
+}
+#o {
+    color: rgb(255, 251, 28);
+    position: relative;
+    left: 110px;
+    top: 25px;
+    font-size: 20px;
+}
+#o:hover {
+    color: rgb(214, 231, 255);
 }
